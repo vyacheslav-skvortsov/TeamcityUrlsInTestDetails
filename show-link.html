@@ -1,0 +1,21 @@
+<script>
+  (function ($) {
+    function createLinksFromUrls() {
+      $("div .fullStacktrace").each(function () {
+        var oldHtml = $(this).html();
+		if(oldHtml.indexOf("<a href=") < 0)
+		{
+			var newHtml=oldHtml.replace(/http(.*)/, "<a href='http$1' target='_blank'>htpp$1</a>");
+			$(this).html(newHtml);
+		}
+      });
+    }
+ 
+    $(document).ready(createLinksFromUrls);
+    $(document).click(function () {
+        window.setTimeout(createLinksFromUrls, 50);
+        window.setTimeout(createLinksFromUrls, 100);
+        window.setTimeout(createLinksFromUrls, 500);
+    });
+})(window.jQuery); 
+</script>

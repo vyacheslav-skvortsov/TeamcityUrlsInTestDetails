@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<teamcity-static-ui-extensions>
+  <rule place-id="BUILD_RESULTS_FRAGMENT" html-file="show-link.html" >
+    <url starts="viewLog.html" />
+  </rule>
+  <rule place-id="TEST_DETAILS_BLOCK" html-file="show-link.html" >
+    <url starts="viewLog.html" />
+  </rule>
+  <!-- 
+     you may include HTML, css or js contents with page places 
+
+     <rule place-id="[put place id here]" 
+           html-file="[put html file from this folder]"
+           js-file="[put js file from this folder]"
+           css-files="[put css file from this folder]">
+         
+         this is the rule to make page place work only for URLs that starts with
+         <url starts="overview.html" />
+
+         this is the rule to only include content if URL is equal to 
+         <url equals="viewType.html" />
+
+         this is the rule to only include content if URL contains
+         <url contains="viewType.html" />
+
+         you may add as much rules / url constraints as you like.
+     </rule>
+
+    The full list of page extensions is available at:
+    http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/web/openapi/PlaceId.html
+
+    
+    Supported values for place-id are: 
+      - ACCEPT_LICENSE_SETTING
+      - ADMIN_EDIT_BUILD_STEPS_ACTIONS_PAGE
+      - ADMIN_EDIT_BUILD_TYPE_ACTIONS_PAGE
+      - ADMIN_EDIT_PROJECT_ACTIONS_PAGE
+      - ADMIN_LIST_REPOSITORIES
+      - ADMIN_PROJECT_CREATE_BUILD_TYPE
+      - ADMIN_SERVER_CONFIGURATION
+      - ADMIN_SETUP_OBJECT_FROM_RESOURCE
+      - AGENT_SUMMARY
+      - ALL_PAGES_FOOTER
+      - ALL_PAGES_HEADER
+      - BEFORE_CONTENT
+      - BUILD_ARTIFACTS_FRAGMENT
+      - BUILD_ARTIFACTS_POPUP_FRAGMENT
+      - BUILD_CONF_STATISTICS_FRAGMENT
+      - BUILD_RESULTS_BUILD_PROBLEM
+      - BUILD_RESULTS_FRAGMENT
+      - BUILD_SUMMARY
+      - CHANGED_FILE_LINK
+      - CHANGE_DETAILS_BLOCK
+      - CLOUD_IMAGE_DETAILS
+      - EDIT_BUILD_RUNNER_SETTINGS_FRAGMENT
+      - HEALTH_STATUS_ITEM
+      - LOGIN_PAGE
+      - MY_SETTINGS_NOTIFIER_SECTION
+      - MY_TOOLS_SECTION
+      - NOTIFIER_SETTINGS_FRAGMENT
+      - PROJECT_FRAGMENT
+      - PROJECT_STATS_FRAGMENT
+      - TEST_DETAILS_BLOCK
+      - TEST_HISTORY
+      - VCS_ROOT_IN_BUILD_NOTE
+      - VIEW_BUILD_RUNNER_SETTINGS_FRAGMENT
+
+  -->
+
+</teamcity-static-ui-extensions>
+
+
+
+
+
+
+
