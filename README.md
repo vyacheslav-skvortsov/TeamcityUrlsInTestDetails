@@ -1,1 +1,1 @@
-"# TeamcityUrlsInTestDetails" 
+Based on http://atombrenner.blogspot.com/2012/09/embed-url-links-in-teamcity-build-logs.html https://stackoverflow.com/questions/27616641/embed-url-clickable-links-in-teamcity-build-log/50738994#50738994
